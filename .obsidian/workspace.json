@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Configurar Red En LINUX.md",
+                "file": "0. Entornos_Linux/0. Configurar Red En LINUX.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0. Configurar Red En LINUX.md",
+                "file": "0. Entornos_Linux/0. Configurar Red En LINUX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0. Configurar Red En LINUX.md",
+                "file": "0. Entornos_Linux/0. Configurar Red En LINUX.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0. Configurar Red En LINUX.md",
+                "file": "0. Entornos_Linux/0. Configurar Red En LINUX.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -168,8 +168,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4bf673ccc1ccf716",
+  "active": "7475e6109ff3e5f6",
   "lastOpenFiles": [
-    "0. Configurar Red En LINUX.md"
+    "0. Entornos_Linux",
+    "0. Entornos_Linux/0. Configurar Red En LINUX.md"
   ]
 }
