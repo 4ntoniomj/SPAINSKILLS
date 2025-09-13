@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0. Entornos_Linux/2. web/2.1 Nginx.md",
+                "file": "1. Redes/1.1 Configuración de switches y routers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.1 Nginx"
+              "title": "1.1 Configuración de switches y routers"
             }
           }
         ]
@@ -171,9 +171,11 @@
   },
   "active": "4bf673ccc1ccf716",
   "lastOpenFiles": [
+    "0. Entornos_Linux/2. web/2.1 Nginx.md",
+    "1. Redes/1.1 Configuración de switches y routers.md",
+    "1. Redes",
     "0. Entornos_Linux/1. LDAP/1.1 SERVER - OpenLDAP.md",
     "0. Entornos_Linux/1. LDAP/1.2 CLIENT - OpenLDAP.md",
-    "0. Entornos_Linux/2. web/2.1 Nginx.md",
     "0. Entornos_Linux/2. web",
     "0. Entornos_Linux/1. LDAP/images/Pasted image 20250912013951.png",
     "0. Entornos_Linux/1. LDAP/images/Pasted image 20250912013823.png",
