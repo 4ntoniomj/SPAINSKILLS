@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Redes/1.1 Configuración de switches y routers.md",
+                "file": "0. Entornos_Linux/3. Bind/3.0 Bind9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.1 Configuración de switches y routers"
+              "title": "3.0 Bind9"
             }
           }
         ]
@@ -171,8 +171,13 @@
   },
   "active": "4bf673ccc1ccf716",
   "lastOpenFiles": [
+    "1. Redes/Encapsulación.md",
+    "0. Entornos_Linux/3. Bind/3.0 Bind9.md",
+    "0. Entornos_Linux/3. Bind",
+    "1. Redes/Modelos OSI y TCP-IP.md",
+    "1. Redes/Cables.md",
+    "1. Redes/Configuración de switches y routers.md",
     "0. Entornos_Linux/2. web/2.1 Nginx.md",
-    "1. Redes/1.1 Configuración de switches y routers.md",
     "1. Redes",
     "0. Entornos_Linux/1. LDAP/1.1 SERVER - OpenLDAP.md",
     "0. Entornos_Linux/1. LDAP/1.2 CLIENT - OpenLDAP.md",
