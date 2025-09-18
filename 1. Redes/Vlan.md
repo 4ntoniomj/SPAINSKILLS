@@ -15,3 +15,50 @@ switchport access vlan 10 # A la vlan 10
 do show ip interfaces brief
 do show interface vlan 10
 ```
+
+---
+## **Tipos de VLAN**
+
+1. **VLAN Default (VLAN 1):** VLAN preconfigurada en switches. No puede eliminarse.
+
+2. **VLAN Nativa:** VLAN sin etiquetar en un enlace troncal. Por defecto es la VLAN 1 (cambiable por seguridad).
+
+3. **VLAN de Gestión:** VLAN dedicada para administrar el switch (ej. VLAN 99). Se asigna una IP para acceso remoto (SSH/HTTP).
+```bash
+switchport trunk native vlan 99
+```
+
+4. **VLAN de Voz:** VLAN prioritaria para tráfico de telefonía IP (Calidad de Servicio - QoS).
+
+---
+## **Enrutamiento Inter-VLAN**
+
+Permite comunicación entre VLANs usando:
+   
+- **Router-on-a-Stick:** Subinterfaces en un router con encapsulación **802.1Q**.
+
+- **Switch Capa 3:** Inter-VLAN routing directamente en el switch (mediante SVIs - Switch Virtual Interfaces).
+  
+#### Route-on-a-stick
+
+---
+## **Protocolos**
+
+- **DTP (Dynamic Trunking Protocol):** Negocia automáticamente enlaces troncales entre switches (modos: _dynamic auto/desirable_, _trunk/access_).
+
+- **VTP (VLAN Trunking Protocol):** Sincroniza bases de datos de VLANs en switches de un mismo dominio (modos: _servidor/cliente/transparente_). **No recomendado** por riesgos de seguridad.
+
+```bash
+vtp mode server
+vtp domain antonio.local
+vtp password 1
+# Cliente
+vtp mode client
+vtp domain antonio.local
+vtp password 
+```
+
+---
+## **802.1Q**
+
+Estándar para etiquetar tramas Ethernet con información de VLAN (ID de 12 bits). Los frames etiquetados se envían por enlaces troncales.
