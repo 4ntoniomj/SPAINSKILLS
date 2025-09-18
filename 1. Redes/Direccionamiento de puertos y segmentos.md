@@ -1,0 +1,3 @@
+- **Segmentos:** Son las **unidades de datos** que utiliza la capa de transporte. Contienen una parte de los datos de la aplicación original más una **cabecera** con información crítica de control (como números de secuencia y acuse de recibo).
+
+- **Direccionamiento de Puertos:** Es el **mecanismo** que usa la capa de transporte para identificar de forma única a las aplicaciones o servicios dentro de un mismo dispositivo. Los puertos permiten que múltiples aplicaciones (ej: navegador, email) usen la red **simultáneamente**.

@@ -1,0 +1,1 @@
+ICMP se usa en el comando ping que envia un paquete y lo devuelve si esta activo y traceroute marca la ruta por la que va.
