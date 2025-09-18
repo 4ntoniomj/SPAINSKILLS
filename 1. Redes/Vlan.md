@@ -36,6 +36,19 @@ switchport trunk native vlan 99
 Permite comunicación entre VLANs usando:
    
 - **Router-on-a-Stick:** Subinterfaces en un router con encapsulación **802.1Q**.
+```bash
+int f0/0
+no shutdown
+int f0/0.10
+no shutdown
+encapsulation dot1Q 10
+ip address 192.168.1.1 255.255.255.0
+int f0/0.20
+no shutdown
+encapsulation dot1Q 20
+ip address 192.168.2.1 255.255.255.0
+do show ip interface brief
+```
 
 - **Switch Capa 3:** Inter-VLAN routing directamente en el switch (mediante SVIs - Switch Virtual Interfaces).
   
@@ -45,6 +58,14 @@ Permite comunicación entre VLANs usando:
 ## **Protocolos**
 
 - **DTP (Dynamic Trunking Protocol):** Negocia automáticamente enlaces troncales entre switches (modos: _dynamic auto/desirable_, _trunk/access_).
+
+```bash
+switchport mode dynamic desirable # Intenta formar un trunk activamente
+switchport mode dynamic auto
+switchport nonegotiate # Desactiva DTP en el puerto
+```
+**dynamic desirable**: el puerto intentará negociar trunk activamente mediante DTP.
+**dynamic auto**: el puerto espera pasivamente; si el otro lado también es auto.
 
 - **VTP (VLAN Trunking Protocol):** Sincroniza bases de datos de VLANs en switches de un mismo dominio (modos: _servidor/cliente/transparente_). **No recomendado** por riesgos de seguridad.
 
